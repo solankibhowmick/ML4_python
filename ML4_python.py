@@ -2,25 +2,25 @@
 player = 1
 
 # set the initial state
-state=21  # number of objects
+state = 21  # number of objects
 print("The number of objects is now ", state)
 while True:
     # get valid move
-    print("Player",player)
+    print("Player", player)
     while True:
-        move=input("What is your move? ")
-        if move in [1, 2, 3] and move<state:
+        move = input("What is your move? ")
+        if move in [1, 2, 3] and move < state:
             break
         print("Illegal move.")
 
     # update the state
-    state=state-move
+    state = state-move
 
     # show the state
     print("The number of objects is now ", state)
 
     # check win status - win lose, stalemates
-    if (state==1):
+    if (state == 1):
         print("Player ", player, "wins!")
         break
 
@@ -28,5 +28,5 @@ while True:
     if (player == 1):
         player = 2
     else:
-        player = 1;
+        player = 1
 print("Game is Over.")
