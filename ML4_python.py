@@ -1,22 +1,30 @@
-# function to check string is  
-# palindrome or not 
-def isPalindrome(s): 
-      
-    # Using predefined function to  
-    # reverse to string print(s) 
-    rev = ''.join(reversed(s)) 
-  
-    # Checking if both string are  
-    # equal or not 
-    if (s == rev): 
-        return True
-    return False
-  
-# main function 
-s = "malayalam"
-ans = isPalindrome(s) 
-  
-if (ans): 
-    print("Yes") 
-else: 
-    print("No") 
+# set player to 1
+player=1
+
+# set the initial state
+state=21 #number of objects
+print "The number of objects is now ",state
+while True:
+      # get valid move
+      move=input("What is your move? ")
+      if move in [1,2,3] and move<state:
+            break
+      print "Illegal move."
+
+      # update the state
+      state=state - move
+
+      # show the state
+      print "The number of objects is now ",state
+
+      # check win status - win lose, stalemates
+      if state==1
+            print "Player ",player,"wins!"
+            break
+
+      # switch players 2->1, 1->2 go back to the valid move line
+      if player==1;
+            player=2
+      else
+            player=1;
+print "Game is Over."
