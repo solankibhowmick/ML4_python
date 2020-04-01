@@ -21,6 +21,7 @@ while True:
       if state==1
             print "Player ",player,"wins!"
             break
+            
       # switch players 2->1, 1->2 go back to the valid move line
       if player==1;
             player=2
