@@ -8,7 +8,7 @@ while True:
     # get valid move
     print("Player", player)
     while True:
-        move = input("What is your move? ")
+        move = int(input("What is your move? "))
         if move in [1, 2, 3] and move < state:
             break
         print("Illegal move.")
