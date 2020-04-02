@@ -1,6 +1,5 @@
 # set player to 1
 player = 1
-
 # set the initial state
 state = 21  # number of objects
 print("The number of objects is now ", state)
